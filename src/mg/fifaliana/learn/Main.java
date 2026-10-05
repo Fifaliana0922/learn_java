@@ -9,6 +9,9 @@ public class Main {
 		car.color();
 		car.vroom();
 		System.out.println("La " + car.getName() + " a une puissance de " +  car.power() + " cv");
+		if(car instanceof Capot) {
+			System.out.println(car.getName() + " a une capot!");
+		}
 		
 		System.out.println("===========//=============");
 		
@@ -17,6 +20,9 @@ public class Main {
 		moto.avance();
 		moto.color();
 		System.out.println("La " + moto.getName() +" a une puissance de " +  moto.power() + " cv");
+		if(moto instanceof Capot) {
+			System.out.println(car.getName() + " a une capot!");
+		}
 	}
 
 }

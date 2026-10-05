@@ -1,6 +1,7 @@
 package mg.fifaliana.learn;
 
-public class Car extends Vehicule {
+public class Car extends Vehicule implements Capot {
+	private boolean capot = true;
 
 	public Car() {
 		super("Voiture");
@@ -19,6 +20,11 @@ public class Car extends Vehicule {
 	@Override
 	public void color() {
 		System.out.println("La voiture a une couleur rouge");
+	}
+
+	@Override
+	public boolean haveCapot() {
+		return capot;
 	}
 
 }
